@@ -37,3 +37,9 @@ tensorboard --logdir=./wordir
 
 ~~~
 
+
+## Code reference.
+~~~
+Wang, Dongkai, and Shiliang Zhang. "Unsupervised person re-identification via multi-label classification." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
+~~~
+
