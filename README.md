@@ -61,7 +61,7 @@ python ./tools/test.py --experiments/duke_eval.yml --gpus 0,1
 #For Market-1501
 python ./tools/test.py --experiments/market_eval.yml --gpus 0,1
 
-#For MSMT1
+#For MSMT17
 python ./tools/test.py --experiments/msmt17_eval.yml --gpus 0,1
 
 ~~~
