@@ -1,0 +1,43 @@
+CONFIG_NAME: 'duke'
+GPUS: '0'
+DATA_DIR: 'data/'
+OUTPUT_DIR: 'output/duke/mlp'
+WORKERS: 8
+PRINT_FREQ: 1
+
+DATASET:
+    DATASET: 'duke'
+    ROOT: 'data/'
+    RE: 0.5
+MODEL:
+    NAME: 'resnet50'
+    PRETRAINED: 'models/imagenet/resnet50-19c8e357.pth'
+    IMAGE_SIZE:
+    - 256
+    - 128
+    FEATURES: 2048
+    CLASSES: 0
+MLP:
+    TYPE: 'SMLC'
+SMCL:
+    DELTA: 5.0
+    GAMMA: 0.01
+GSMLP:
+    TAU: 0.6
+    L: 10
+TRAIN:
+    BATCH_SIZE: 128
+    SHUFFLE: true
+    BEGIN_EPOCH: 0
+    END_EPOCH: 40
+    RESUME: false
+    OPTIMIZER: 'sgd'
+    LR: 0.1
+    LR_FACTOR: 0.1
+    LR_STEP: 40
+    WEIGHT_DECAY: 0.0005
+    MOMENTUM: 0.9
+    NESTEROV: true
+TEST:
+    BATCH_SIZE: 32
+    MODEL_FILE: 'output/duke/mlp/checkpoint.pth.tar'
