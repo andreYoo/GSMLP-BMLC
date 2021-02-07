@@ -48,6 +48,7 @@ python tools/train.py --experiments ./experiments/***.yml --gpus 0,1
 #Test
 python tools/test.py --experiments ./experiments/***.yml --gpus 0,1
 ~~~
+You can use script files on './run_scripts' direcory.
 
 
 ## Reproduce the experimental results
