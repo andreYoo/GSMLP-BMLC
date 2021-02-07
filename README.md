@@ -70,3 +70,7 @@ python ./tools/test.py --experiments/msmt17_eval.yml --gpus 0,1
 ## Code reference.
 * The code is mainly encouraged by [ECN](https://github.com/zhunzhong07/ECN) and [MLCReID](https://github.com/kennethwdk/MLCReID)
 
+
+## Current issue.
+The look-up table for GSMLP has been implemented based on GPU, so it has been being easily occurred that a segment fault by the out of VGA memory. We will fix this issue by adding a look-up table module based on DRAM in a future.  
+
