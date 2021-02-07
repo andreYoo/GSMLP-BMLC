@@ -7,27 +7,29 @@ This paper addresses unsupervised person re-identification (Re-ID) using multi-l
 
 
 
-##Dependencies
+## Dependencies
 
 This project mainly complied with Python3.6, Pytorch 1.3. All details are included in the 'requirement.txt'
+
 ~~~
+#Setting the environment
 pip install -r requirements.txt
 ~~~
 
 
 ## File configuration
-.<br>
-├── abla.py<br>
-├── arun.sh<br>
-├── config<br>
-│   ├── config.txt<br>
-│   ├── kinetics-skeleton<br>
-│   │   ├── test_bone.yaml<br>
-│   │   ├── test_joint_mutual_none.yaml<br>
-│   │   ├── test_joint_mutual_tmp.yaml<br>
-│   │   ├── test_joint_mutual.yaml<br>
-│   │   ├── test_joint.yaml<br>
-...
+
+<br>
+├── data #Extract dataset to this directory. <br>
+├── experiments <br>
+├── lib <br>
+├── logs <br>
+├── models <br>
+│   └── imagenet #Extract backbone network checkpoint here <br>
+├── output # Extract the checkpoints to reproduct the results. <br>
+├── run_scripts <br>
+└── tools <br>
+
 
 
 ## Dataset reference
