@@ -33,10 +33,10 @@ pip install -r requirements.txt
 
 
 ## Dataset reference
-Refer [ECN](https://github.com/zhunzhong07/ECN) to prepare DukeMTMC-ReID dataset, Market-1501 dataset,and MSMT17 dataset.
+Refer [ECN](https://github.com/zhunzhong07/ECN) to prepare DukeMTMC-ReID dataset, Market-1501 dataset,and MSMT17 dataset. Extract dataset files to './data'.
 
 ## Backbone network (ResNet-50) Reference
-You can download the backbone network model from [here](https://drive.google.com/file/d/1rfCcrOzIWNWakA3BYkqp5om2_nI5Ftr8/view?usp=sharing)
+You can download the backbone network model from [here](https://drive.google.com/file/d/1rfCcrOzIWNWakA3BYkqp5om2_nI5Ftr8/view?usp=sharing). Save the weight file on './models/imagenet'
 
 
 
@@ -52,7 +52,7 @@ python tools/test.py --experiments ./experiments/***.yml --gpus 0,1
 
 ## Reproduce the experimental results
 
-You can download the checkpoint files to reproduct the experiment results from [here](https://drive.google.com/file/d/1CsKlNc06ZQbMlThEPkowmDSlMJlLmdq8/view?usp=sharing).
+You can download the checkpoint files to reproduct the experiment results from [here](https://drive.google.com/file/d/1CsKlNc06ZQbMlThEPkowmDSlMJlLmdq8/view?usp=sharing). After download it. Extract the file under the './outputs'.
 
 ~~~
 #For Duke
