@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Unsupervised ReID via Multi-label Classification')
+    parser = argparse.ArgumentParser(description='Unsupervised ReID via Multi-Label Prediction and Classification based on Graph-Structural Insight')
     parser.add_argument('--experiments', dest='cfg_file',
                         help='optional config file',
                         default='experiments/market.yml', type=str)
