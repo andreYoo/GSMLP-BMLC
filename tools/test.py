@@ -20,7 +20,7 @@ from lib.utils.serialization import load_checkpoint
 from lib.utils.config import config, update_config
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Unsupervised ReID via Multi-label Classification')
+    parser = argparse.ArgumentParser(description='GSMLP-SMLC Test')
     parser.add_argument('--experiments', dest='cfg_file',
                         help='optional config file',
                         default='experiments/market.yml', type=str)
